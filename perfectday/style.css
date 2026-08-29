@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+/* ========================= */
+/* FIRST PAGE */
+/* ========================= */
+
+.home {
+    background-color: #dff6ff;
+    text-align: center;
+}
+
+.welcome-box {
+    background-color: white;
+
+    width: 400px;
+
+    margin: 150px auto;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px gray;
+}
+
+.welcome-box h1 {
+    color: #ff5c8a;
+}
+
+.welcome-box p {
+    font-size: 18px;
+}
+
+
+/* STAR */
+
+#starButton {
+    font-size: 70px;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+
+/* ========================= */
+/* SECOND PAGE */
+/* ========================= */
+
+.relief {
+    background-color: #fff3d6;
+
+    text-align: center;
+}
+
+.relief-box {
+    background-color: white;
+
+    width: 700px;
+
+    max-width: 80%;
+
+    margin: 60px auto;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px gray;
+}
+
+.relief-box h1 {
+    color: #e63946;
+
+    font-size: 40px;
+}
+
+.relief-box h2 {
+    color: #555;
+}
+
+.relief-box p {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #444;
+}
+
+
+/* ========================= */
+/* PERFECT DAY BUTTON */
+/* ========================= */
+
+#perfectButton {
+    background-color: #ff5c8a;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 25px;
+
+    font-size: 18px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+}
+
+
+/* ========================= */
+/* THANK YOU MESSAGE */
+/* ========================= */
+
+#thankYou {
+    display: none;
+
+    color: #ff5c8a;
+
+    margin-top: 30px;
+}// ===============================
+// STAR BUTTON
+// ===============================
+
+let starButton = document.getElementById("starButton");
+
+if (starButton) {
+
+    starButton.onclick = function() {
+
+        window.location.href = "relief.html";
+
+    };
+
+}
+
+
+// ===============================
+// PERFECT DAY BUTTON
+// ===============================
+
+let perfectButton = document.getElementById("perfectButton");
+
+let thankYou = document.getElementById("thankYou");
+
+if (perfectButton) {
+
+    perfectButton.onclick = function() {
+
+        thankYou.style.display = "block";
+
+        perfectButton.style.display = "none";
+
+    };
+
+}
