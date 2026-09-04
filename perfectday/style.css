@@ -1,3 +1,4 @@
+```css
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -35,8 +36,6 @@ body {
     font-size: 18px;
 }
 
-
-/* STAR */
 
 #starButton {
     font-size: 70px;
@@ -118,48 +117,83 @@ body {
 
 
 /* ========================= */
-/* THANK YOU MESSAGE */
+/* DONATION FORM */
+/* ========================= */
+
+#donationForm {
+    display: none;
+
+    margin-top: 30px;
+
+    padding: 25px;
+
+    background-color: #fff0f6;
+
+    border-radius: 15px;
+}
+
+#donationForm h2 {
+    color: #ff5c8a;
+}
+
+#amount {
+    width: 80%;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+}
+
+#message {
+    width: 80%;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    resize: vertical;
+}
+
+#submitButton {
+    background-color: #5c8cff;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    font-size: 16px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+
+
+/* ========================= */
+/* THANK YOU */
 /* ========================= */
 
 #thankYou {
     display: none;
 
-    color: #ff5c8a;
-
     margin-top: 30px;
-}// ===============================
-// STAR BUTTON
-// ===============================
 
-let starButton = document.getElementById("starButton");
-
-if (starButton) {
-
-    starButton.onclick = function() {
-
-        window.location.href = "relief.html";
-
-    };
-
+    color: #ff5c8a;
 }
-
-
-// ===============================
-// PERFECT DAY BUTTON
-// ===============================
-
-let perfectButton = document.getElementById("perfectButton");
-
-let thankYou = document.getElementById("thankYou");
-
-if (perfectButton) {
-
-    perfectButton.onclick = function() {
-
-        thankYou.style.display = "block";
-
-        perfectButton.style.display = "none";
-
-    };
-
-}
+```
